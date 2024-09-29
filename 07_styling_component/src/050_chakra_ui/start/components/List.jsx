@@ -1,9 +1,11 @@
+import { VStack } from "@chakra-ui/react";
+
 const List = ({todos, deleteTodo}) => {
     const complete = (id) => {
         deleteTodo(id)
     }
     return (
-        <div>
+        <VStack>
             {todos.map(todo => {
                 return (
                     <div key={todo.id}>
@@ -12,7 +14,7 @@ const List = ({todos, deleteTodo}) => {
                     </div>
                 )
             })}
-        </div>
+        </VStack>
     );
 }
 
