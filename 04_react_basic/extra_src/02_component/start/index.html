@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../../../libs/react.development.js"></script>
+    <script src="../../../../libs/react-dom.development.js"></script>
+    <script src="../../../../libs/babel-standalone.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const appEl = document.querySelector("#app");
+      const root = ReactDOM.createRoot(appEl);
+      // root.render(<h1>こんにちは</h1>);
+      // function Example01() {
+      //   return <h1>関数でこんにちは!</h1>;
+      // }
+      // const Example01 = () => {
+      //   return <h1>アロー関数でこんにちは</h1>;
+      // }
+      const Example01 = () => <h1>アロー関数（省略）でこんにちは</h1>;
+      // const Example02 = () => {
+      //   return (
+      //     <div>
+      //       <h1>複数行でこんにちは</h1>
+      //     </div>
+      //   );
+      // }
+      const Example02 = () => (
+        <div>
+          <h1>複数行（省略）でこんにちは</h1>
+        </div>
+      );
+      root.render(<Example02 />);
+    </script>
+  </body>
+</html>
