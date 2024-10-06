@@ -15,6 +15,8 @@ import Modal from "./components/Modal";
 */
 
 const ModalPortal = ({ children }) => {
+  // const target = document.querySelector("body");
+  // 本来であればbodyに生成するが、今回は下記クラス直下に生成する
   const target = document.querySelector(".container.start");
   return createPortal(children, target);
 }

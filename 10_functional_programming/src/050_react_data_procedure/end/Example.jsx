@@ -19,9 +19,7 @@ const Example = () => {
   // 関数外に影響を及ぼさない。
   // window.alert('hello')
 
-  const increment = () => {
-    setState(state + 1);
-  }
+  const increment = () => setState(state + 1);
   return (
     <>
       <button onClick={increment}>+</button>
