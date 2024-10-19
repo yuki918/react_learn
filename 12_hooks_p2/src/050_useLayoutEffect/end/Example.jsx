@@ -1,4 +1,5 @@
 import { useEffect, useState, useLayoutEffect } from "react";
+import Random from "./Random";
 
 // POINT useLayoutEffectとは？useEffectとの違い
 const Example = () => {
@@ -47,11 +48,14 @@ const Timer = () => {
   }, [])
 
   return (
+    <>
     <h3>
       <time>{time}</time>
       <span>秒経過</span>
     </h3>
-    );
+    <Random />
+    </>
+  );
 };
 
 export default Example;

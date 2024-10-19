@@ -5,16 +5,16 @@
 const Example = () => {
   let str: string = 'Hello';
   str = 'Bye';
-  console.log(str);
+  // console.log(str);
 
   let num: number = 102;
-  console.log(num);
+  // console.log(num);
   
   let bignum: bigint = 103n;
-  console.log(bignum);
+  // console.log(bignum);
 
   let bool: boolean = true;
-  console.log(bool);
+  // console.log(bool);
 
   let nullish: null = null;
   let undefinedValue: undefined = undefined;

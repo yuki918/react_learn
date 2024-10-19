@@ -5,7 +5,7 @@ import CounterResult from "./CounterResult"
 import CounterButton from "./CounterButton"
 
 const Counter = () => {
-    const status = useSelector(state => state.counter.status);
+    const status = useSelector(state => state.counter.state);
     return (
         <>
             <CounterResult />

@@ -6,6 +6,7 @@ const Example = () => {
   return (
     <Provider store={store}>
       <Counter />
+      <p>test</p>
     </Provider>
   );
 };
